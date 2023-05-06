@@ -1,0 +1,69 @@
+HTML:
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fixed Header and Footer with Centered Content</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Header</h1>
+	</header>
+	<main>
+		<h2>Content</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo ut lorem vitae imperdiet. Nulla ut nunc euismod, tristique nibh sed, eleifend enim. Nulla ut malesuada ante. Sed porta nisi vel enim vestibulum, vel commodo nulla eleifend. Vivamus dictum mauris nec laoreet tincidunt. Proin luctus neque id convallis eleifend. Nam sagittis nibh vel purus dapibus ultricies. Maecenas in massa ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+	</main>
+	<footer>
+		<p>Footer</p>
+	</footer>
+</body>
+</html>
+
+CSS:
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+}
+
+main {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+}
+
+h1,
+h2,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #f0f0f0;
+}
